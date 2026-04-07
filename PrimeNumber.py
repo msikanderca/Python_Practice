@@ -1,15 +1,13 @@
-# code to check prime numbers.
-def is_prime_while(num):
-    if num <= 1:
-        return False
-    i = 2
-    while i <= int(num**0.5):
-        if num % i == 0:
-            return False
-        i += 1
-    return True
-number = int(input("Enter a number: "))
-if is_prime_while(number):
-    print(f"{number} is a prime number.")
+# Write a program in Python to check given number is prime or not.
+
+# Method 1: Check Prime Using For Loop
+n = int(input("please give a number : "))
+i,temp=0,0
+for i in range(2,n//2):
+    if n%i == 0:
+        temp=1
+        break
+if temp == 1:
+    print("given number is not prime")
 else:
-    print(f"{number} is not a prime number.")
+    print("given number is prime")
