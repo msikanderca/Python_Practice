@@ -1,12 +1,11 @@
-class Dog:
-    def __init__(self, name, breed):
-        self.name = name
-        self.breed = breed
+num = int (input("Enter number : ") )
 
-    def bark(self):
-        return "Woof!"
+rev = 0
+while (num != 0):
+    d = num %10
+    rev =rev + d
+    num = num //10
+print (f'total number is {rev}')
 
 
-my_dog = Dog("Buddy", "Golden Retriever")
-print(my_dog.name)  # Output: Buddy
-print(my_dog.bark())  # Output: Woof!
+
